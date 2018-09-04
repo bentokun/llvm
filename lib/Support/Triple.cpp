@@ -468,6 +468,7 @@ static Triple::VendorType parseVendor(StringRef VendorName) {
     .Case("mesa", Triple::Mesa)
     .Case("suse", Triple::SUSE)
     .Case("oe", Triple::OpenEmbedded)
+    .Case("nokia", Triple::Nokia)
     .Default(Triple::UnknownVendor);
 }
 
@@ -506,6 +507,7 @@ static Triple::OSType parseOS(StringRef OSName) {
     .StartsWith("contiki", Triple::Contiki)
     .StartsWith("amdpal", Triple::AMDPAL)
     .StartsWith("hermit", Triple::HermitCore)
+    .StartsWith("symbian", Triple::Symbian)
     .Default(Triple::UnknownOS);
 }
 
