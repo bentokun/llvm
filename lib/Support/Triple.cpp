@@ -169,6 +169,7 @@ StringRef Triple::getVendorTypeName(VendorType Kind) {
   case Mesa: return "mesa";
   case SUSE: return "suse";
   case OpenEmbedded: return "oe";
+  case Nokia: return "nokia";
   }
 
   llvm_unreachable("Invalid VendorType!");
@@ -210,6 +211,7 @@ StringRef Triple::getOSTypeName(OSType Kind) {
   case Contiki: return "contiki";
   case AMDPAL: return "amdpal";
   case HermitCore: return "hermit";
+  case Symbian: return "symbian";
   }
 
   llvm_unreachable("Invalid OSType");

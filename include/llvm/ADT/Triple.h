@@ -146,7 +146,8 @@ public:
     Mesa,
     SUSE,
     OpenEmbedded,
-    LastVendorType = OpenEmbedded
+    Nokia,
+    LastVendorType = Nokia
   };
   enum OSType {
     UnknownOS,
@@ -183,7 +184,8 @@ public:
     Contiki,
     AMDPAL,     // AMD PAL Runtime
     HermitCore, // HermitCore Unikernel/Multikernel
-    LastOSType = HermitCore
+    Symbian,
+    LastOSType = Symbian
   };
   enum EnvironmentType {
     UnknownEnvironment,
